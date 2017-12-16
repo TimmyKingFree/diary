@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input class="fileUpload" type="file"> -->
+    <form method="post" enctype="multipart/form-data" action="/file-upload">
+        <input type="file" name="thumbnail">
+        <input type="submit">
+      </form>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        // $(".fileUpload").change(function () {
+        //     var file = this.files[0];
+        //     // readFile(file,$(this).parent().siblings(".on"));
+        //     console.log(file);
+        // });
+    </script>
+</body>
+</html>
