@@ -94,7 +94,7 @@ app.post('/file-upload', multipartMiddleware, function (req, res) {
     // 删除临时文件夹文件, 
     fs.unlink(tmp_path, function () {
       if (err) throw err;
-      res.send('File uploaded to: ' + target_path + ' - ' + req.files.thumbnail.size + ' bytes');
+      res.send('File uploaded to: ' + './result/' + ' - ' + req.files.thumbnail.size + ' bytes');
     });
   });
 });
